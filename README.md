@@ -17,7 +17,6 @@ Observe the Waveforms Analyze the output waveforms in the simulation window, and
 Save and Document Results Capture screenshots of the waveform and save the simulation logs. These will be included in the lab report.
 # Code
 # Mealy 1011
-// Verilog code
 ```
 module mealy_fsm_1011(
             input clk,rst,xin,
@@ -74,7 +73,7 @@ module mealy_fsm_1011(
     end
 endmodule
 ```
-// Test bench
+## Test bench
 ```
 module mealy_fsm_1011_tb;
         reg clk_t,rst_t,xin_t;
@@ -107,7 +106,7 @@ module mealy_fsm_1011_tb;
        always #50  clk_t = ~clk_t;                 
 endmodule
 ```
-// output Waveform
+## output Waveform
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d7ffb9d2-c44f-47ea-a320-639213f7d228" />
 
 
@@ -216,5 +215,5 @@ endmodule
 
 
 
-Conclusion
+# Conclusion
 The Mealy and Moore state machine for sequence 1011 was designed and successfully simulated using Verilog HDL. The testbench verified both the write and read functionalities by simulating the sequence operations and observing the output waveforms.
